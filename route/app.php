@@ -10,8 +10,4 @@
 // +----------------------------------------------------------------------
 use think\facade\Route;
 
-// 获取当前计数
-Route::get('/api/count', 'api/getCount');
-
-// 更新计数，自增或者清零
-Route::post('/api/count', 'api/updateCount');
+Route::rule('/api/login', 'Login/login');
