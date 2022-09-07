@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------
-// | 文件: index.php
+// | 文件: api.php
 // +----------------------------------------------------------------------
 // | 功能: 提供todo api接口
 // +----------------------------------------------------------------------
@@ -9,7 +9,7 @@
 // | 作者: rangangwei<gangweiran@tencent.com>
 // +----------------------------------------------------------------------
 
-namespace app\controller;
+namespace app\api\controller;
 
 use Error;
 use Exception;
@@ -27,8 +27,8 @@ class Index
      */
     public function index(): Html
     {
-        # html路径: ../view/index.html
-        return response(file_get_contents(dirname(dirname(__FILE__)).'/view/index.html'));
+        # html路径: ../view/api.html
+        return response(file_get_contents(dirname(dirname(__FILE__)).'/view/api.html'));
     }
 
 
