@@ -496,9 +496,7 @@ trait Attribute
                 $value = $this->getJsonValue($fieldName, $value);
             } else {
                 $closure = $this->withAttr[$fieldName];
-                if ($closure instanceof \Closure) {
-                    $value = $closure($value, $this->data);
-                }
+                $value   = $closure($value, $this->data);
             }
         } elseif (method_exists($this, $method)) {
             if ($relation) {

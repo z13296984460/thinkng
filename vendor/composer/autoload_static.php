@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7
+class ComposerStaticInitab4c4f0f4c9d7cc45fda45189333d97e
 {
     public static $files = array (
         '9b552a3cc426e3287cc811caefa3cf53' => __DIR__ . '/..' . '/topthink/think-helper/src/helper.php',
@@ -18,6 +18,7 @@ class ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7
     public static $prefixLengthsPsr4 = array (
         't' => 
         array (
+            'think\\view\\driver\\' => 18,
             'think\\trace\\' => 12,
             'think\\app\\' => 10,
             'think\\' => 6,
@@ -42,12 +43,17 @@ class ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7
         ),
         'L' => 
         array (
+            'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\Cached\\' => 24,
             'League\\Flysystem\\' => 17,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'think\\view\\driver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topthink/think-view/src',
+        ),
         'think\\trace\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-trace/src',
@@ -61,6 +67,7 @@ class ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7
             0 => __DIR__ . '/..' . '/topthink/framework/src/think',
             1 => __DIR__ . '/..' . '/topthink/think-helper/src',
             2 => __DIR__ . '/..' . '/topthink/think-orm/src',
+            3 => __DIR__ . '/..' . '/topthink/think-template/src',
         ),
         'app\\' => 
         array (
@@ -98,6 +105,10 @@ class ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
+        ),
         'League\\Flysystem\\Cached\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src',
@@ -123,10 +134,10 @@ class ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit19c02ca2469af2a5512f466a2c8179b7::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitab4c4f0f4c9d7cc45fda45189333d97e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitab4c4f0f4c9d7cc45fda45189333d97e::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr0 = ComposerStaticInitab4c4f0f4c9d7cc45fda45189333d97e::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInitab4c4f0f4c9d7cc45fda45189333d97e::$classMap;
 
         }, null, ClassLoader::class);
     }

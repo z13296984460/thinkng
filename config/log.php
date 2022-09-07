@@ -2,13 +2,12 @@
 
 // +----------------------------------------------------------------------
 // | 日志设置
-// | 详细参考: https://www.kancloud.cn/manual/thinkphp6_0/1037616
 // +----------------------------------------------------------------------
 return [
     // 默认日志记录通道
     'default'      => env('log.channel', 'file'),
     // 日志记录级别
-    'level'        => ['info', 'warning', 'error', 'critical', 'alert', 'emergency'],
+    'level'        => [],
     // 日志类型记录的通道 ['error'=>'email',...]
     'type_channel' => [],
     // 关闭全局日志写入
@@ -22,7 +21,7 @@ return [
             // 日志记录方式
             'type'           => 'File',
             // 日志保存目录
-            'path'           => '', // 默认日志在/app/runtime/log/目录下
+            'path'           => '',
             // 单文件日志写入
             'single'         => false,
             // 独立日志级别
